@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title> Latihan 12 </title>
+</head>
+
+<body>
+    <script language="javascript">
+        function pilih() {
+            str = "Latihan1.html";
+            if (document.fform.pilihan[1].checked){
+                str ="latihan2.html";
+            }
+            else
+                if(document.fform.pilihan[2].checked){
+                    str ="latihan3.html";
+                }
+                else
+                    if(document.fform.pilihan[3].checked){
+                        str ="latihan4.html";
+                    }
+            parent.kanan.location.href = str;
+        }
+    </script>
+    <p> Pilih latihan di bawah ini </p>
+    <p>
+        <form name="fform">
+            <input type="radio" name="pilihan"> Matematika <br>
+            <input type="radio" name="pilihan"> Objek teks <br>
+            <input type="radio" name="pilihan"> Objek select <br>
+            <input type="radio" name="pilihan"> Objek check <br>
+            <input type="button" value="tampilkan" onclick="pilih()">
+        </form>
+    </p>
+</body>
+
+</html>

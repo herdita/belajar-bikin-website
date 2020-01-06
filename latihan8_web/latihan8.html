@@ -1,0 +1,117 @@
+<html>
+
+<head>
+    <title>latihan java script </title>
+</head>
+
+<body>
+    <script language="Javascript">
+        function bilangan(form) {
+            var strnama = document.fform.pertama.value;
+            var strsekolah = document.fform.kedua.value;
+            document.zform.pertama1.value = strnama;
+            document.zform.kedua2.value = strsekolah;
+
+            var ket = "Terdefinisi";
+            if (form.kelamin[1].checked == true) {
+                ket = "Wanita";
+            }
+            else
+                if (form.kelamin[2].checked == true) {
+                    ket = "Waria";
+                }
+                else {
+                    ket = "pria";
+                }
+            document.zform.ketiga3.value = ket;
+
+            var ket1 = "";
+            var ket2 = "";
+            if (form.bola.checked == true) {
+                ket1 = "Bola";
+            }
+
+            if (form.lari.checked == true) {
+                ket2 = "lari";
+            }
+            document.zform.keempat4.value = (ket1 + "," + ket2);
+
+            var ket3 = document.fform.universitas.value;
+            document.zform.kelima5.value = ket3;
+        }
+    </script>
+
+    <table>
+        <form name="fform">
+            <tr>
+                <td> Nama : </td>
+                <td> : </td>
+                <td> <input type="text" name="pertama"> </td>
+            </tr>
+            <tr>
+                <td> Sekolah </td>
+                <td> : </td>
+                <td> <input type="text" name="kedua"> </td>
+            </tr>
+            <tr>
+                <td> Jenis kelamin </td>
+                <td> : </td>
+                <td> Pria<input type="radio" name="kelamin"><br> Wanita
+                    <input type="radio" name="kelamin"><br> Waria
+                    <input type="radio" name="kelamin"></td>
+            </tr>
+            <tr>
+                <td> Hobi </td>
+                <td> : </td>
+                <td> Bermain Bola <input type="checkbox" name="bola"> lari <input type="checkbox" name="lari"> </td>
+            </tr>
+            <tr>
+                <td> Universirtas </td>
+                <td> : </td>
+                <td> <select name="universitas">
+                        <option> Unikom </option>
+                        <option> Upi </option>
+                        <option> Unpad </option>
+                        <option> itb </option>
+                     </select>
+                </td>
+            </tr>
+    </table>
+    <br>
+    <input type="button" name="submit" value="jumlah" onclick="bilangan(this.form)"> <input type="reset" name="submit" value="ulang">
+    </form>
+    <hr>
+
+    <table>
+        <form name="zform">
+            <tr>
+                <td> Nama : </td>
+                <td> : </td>
+                <td> <input type="text" name="pertama1"> </td>
+            </tr>
+            <tr>
+                <td> Sekolah </td>
+                <td> : </td>
+                <td> <input type="text" name="kedua2"> </td>
+            </tr>
+            <tr>
+                <td> Jenis Kelamin </td>
+                <td> : </td>
+                <td> <input type="text" name="ketiga3"> </td>
+            </tr>
+            <tr>
+                <td> Hobi </td>
+                <td> : </td>
+                <td> <input type="text" name="keempat4"> </td>
+            </tr>
+            <tr>
+                <td> Universitas </td>
+                <td> : </td>
+                <td> <input type="text" name="kelima5"> </td>
+            </tr>
+        </form>
+    </table> <br>
+
+</body>
+
+</html>

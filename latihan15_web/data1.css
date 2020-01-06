@@ -1,0 +1,96 @@
+body {
+    background-color: #0c018b;
+}
+
+#satu {
+    background-image: url(header.jpg);
+    width: 100%;
+    height: 20%;
+    position: relative;
+}
+
+.ul1, ul, li {
+    display: block;
+    float: right;
+}
+
+a {
+    text-decoration: none;
+    color: #e8e8e8;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: block;
+    padding: 3px 20px;
+    transition: all 1s;
+}
+
+a:hover {
+    background-color: #2f0df0;
+    transform: rotate(30deg);
+    color: white;
+    border-radius: 5px 5px;
+}
+
+#dua {
+    background: linear-gradient(white, #d2d2ff);
+    border-radius: 6px 6px;
+    display: block;
+    height: 40px;
+    width: 100%;
+    margin: 10px 0;
+    line-height: 34px;
+    opacity: 0.9;
+    position: relative;
+}
+
+.ul2, ul, li {
+    display: block;
+    float: left;
+    margin-top: 0;
+}
+
+.a2 {
+    color: black;
+}
+
+.a2:hover {
+    background-color: #2f0df0;
+    border-radius: 0px 0px;
+    transform: none;
+}
+
+#tiga {
+    background: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 8px 0 0;
+    opacity: 0.8;
+    position: relative;
+}
+
+#empat {
+    background: #414141;
+    width: 100%;
+    height: 35%;
+    opacity: 0.5;
+    margin-top: 0.5%;
+    margin-left: -8px;
+    position: absolute;
+}
+
+#empat p{
+    line-height: 0.8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size : 15px;
+    text-indent: 50;
+}
+
+#empat h2{
+    margin-left: 20px;
+}
+
+.img1{
+    float: right;
+    margin: -40px 0px;
+}

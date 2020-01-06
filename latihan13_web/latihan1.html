@@ -1,0 +1,156 @@
+<html>
+
+<head>
+    <title> Latihan 1</title>
+    <link rel="stylesheet" type="text/css" href="data.css">
+</head>
+
+<body>
+    <script language="Javascript" src="data.js">
+
+    </script>
+    <h2>
+        <pre>
+            Nama : Herdita Permana
+            Kelas  : IT II - 13
+        </pre>
+    </h2>
+    <table class="table1" align="center">
+        <tr>
+            <td>
+                <fieldset>
+                    <legend> Pengisian Form </legend>
+                    <table align="center" class="tableform">
+                        <form name="fform">
+                            <tr>
+                                <td> Nama Lengkap </td>
+                                <td> : </td>
+                                <td> <input type="text" name="nama_lengkap" size="30" placeholder=" Herdita Permana* "></td>
+                            </tr>
+                            <tr>
+                                <td> Nama Panggilan </td>
+                                <td> : </td>
+                                <td> <input type="text" name="panggilan" size="30" placeholder=" Herdi* "> </td>
+                            </tr>
+                            <tr>
+                                <td> Alamat </td>
+                                <td> : </td>
+                                <td> <input type="text" name="alamat" size="30" placeholder=" Kp.solokan jeruk* "> </td>
+                            </tr>
+                            <tr>
+                                <td> Jenis Kelamin </td>
+                                <td> : </td>
+                                <td> <input type="radio" name="kelamin">Pria <input type="radio" name="kelamin">Wanita  &nbsp &nbsp &nbsp <input type="button" class="submit1" name="submit" value="Submit" onclick="radio(this.form)"></td>
+                            </tr>
+                            <tr>
+                                <td> Sekolah </td>
+                                <td> : </td>
+                                <td> <input type="text" name="sekolah" size="30" placeholder=" Universita Komputer Indonesia*">                                    </td>
+                            </tr>
+                            <tr>
+                                <td> Fakultas </td>
+                                <td> : </td>
+                                <td> <select name="fakultas">
+                                        <option> Teknik dan Ilmu Komputer </option>
+                                        <option> Ekonomi </option>
+                                        <option> Sosial dan Politik </option>
+                                        <option> Desain </option>
+                                        <option> Sastra </option>
+                                        <option> Hukum </option>
+                                     </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> Hobi </td>
+                                <td> : </td>
+                                <td> <input type="checkbox" name="sport">Sport
+                                    <input type="checkbox" name="games">Games
+                                    <input type="checkbox" name="hunting">Hunting &nbsp
+                                    <input type="button" class="submit1" name="submit" value="Submit" onclick="checkbox(this.form)">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> Motto </td>
+                                <td> : </td>
+                                <td> <textarea name="motto" rows="3" cols="28" placeholder=" truly to be a good person*"> </textarea>                                    </td>
+                            </tr>
+                            <tr>
+                                <td> </td>
+                                <td> </td>
+                                <td><input type="button" class="submit" name="submit" value="Submit" onclick="proses(this.form)" >
+                                    <input type="reset" class="submit" name="submit" value="reset"></td>
+                            </tr>
+                        </form>
+                    </table>
+                </fieldset>
+            </td>
+            <td>
+                <fieldset>
+                    <legend> Penampilan Form </legend><br>
+                    <form name="zform">
+                        <table align="center" class="table2">
+                            <tr>
+                                <td class="td2" width="130px"> Nama Lengkap </td>
+                                <td class="td2" width="10px">
+                                    <center> : </center>
+                                </td>
+                                <td class="td2" width="290px"><input class="tampil" type="text" name="znama_lengkap"></td>
+                            </tr>
+                            <tr>
+                                <td class="td2"> Nama Panggilan </td>
+                                <td class="td2">
+                                    <center> : </center>
+                                </td>
+                                <td class="td2"><input class="tampil" type="text" name="zpanggilan"></td>
+                            </tr>
+                            <tr>
+                                <td class="td2"> Alamat </td>
+                                <td class="td2">
+                                    <center> : </center>
+                                </td>
+                                <td class="td2"><input class="tampil" type="text" name="zalamat"></td>
+                            </tr>
+                            <tr>
+                                <td class="td2"> Jenis Kelamin </td>
+                                <td class="td2">
+                                    <center> : </center>
+                                </td>
+                                <td class="td2"> <input class="tampil" type="text" name="zkelamin"></td>
+                            </tr>
+                            <tr>
+                                <td class="td2"> Sekolah </td>
+                                <td class="td2">
+                                    <center> : </center>
+                                </td>
+                                <td class="td2"> <input class="tampil" type="text" name="zsekolah"></td>
+                            </tr>
+                            <tr>
+                                <td class="td2"> Fakultas </td>
+                                <td class="td2">
+                                    <center> : </center>
+                                </td>
+                                <td class="td2"> <input class="tampil" type="text" name="zfakultas"></td>
+                            </tr>
+                            <tr>
+                                <td class="td2"> Hobi </td>
+                                <td class="td2">
+                                    <center> : </center>
+                                </td>
+                                <td class="td2"> <input class="tampil" type="text" name="zhobi"></td>
+                            </tr>
+                            <tr>
+                                <td class="td2"> Motto </td>
+                                <td class="td2">
+                                    <center> : </center>
+                                </td>
+                                <td class="td2"><input class="tampil" type="textarea" rows="3" cols="28" name="zmotto"></td>
+                            </tr>
+                    </form>
+                    </table>
+                </fieldset>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <title> latihan 13 </title>
+</head>
+
+<body>
+    <script language="javascript">
+        function pilihan() {
+            var str = "latihan1.html";
+            if (document.fform.pilih[1].checked) {
+                str = "latihan2.html";
+            }
+            else
+                if (document.fform.pilih[2].checked) {
+                    str = "latihan3.html";
+                }
+                else
+                    if (document.fform.pilih[3].checked) {
+                        str = "latihan4.html";
+                    }
+                    else
+                        if (document.fform.pilih[4].checked) {
+                            str = "latihan5.html"
+                        }
+            parent.kanan.location.href = str;
+        }
+    </script>
+    <p> pilih menu yand di tampilkan </p>
+    <form name="fform">
+        <p>
+            <table>
+                <tr>
+                    <td> <input type="radio" name="pilih" value="1"> </td>
+                    <td> latihan 1 </td>
+                </tr>
+                <tr>
+                    <td> <input type="radio" name="pilih" value="2"> </td>
+                    <td> latihan 2 </td>
+                </tr>
+                <tr>
+                    <td> <input type="radio" name="pilih" value="3"> </td>
+                    <td> latihan 3 </td>
+                </tr>
+                <tr>
+                    <td> <input type="radio" name="pilih" value="4"> </td>
+                    <td> latihan 4 </td>
+                </tr>
+                <tr>
+                    <td> <input type="radio" name="pilih" value="5"> </td>
+                    <td> latihan 5 </td>
+                </tr>
+                <tr>
+                    <td colspan="2"> <input type="button" value="tampilan" onclick="pilihan()"> </td>
+                </tr>
+            </table>
+        </p>
+    </form>
+</body>
+
+</html>

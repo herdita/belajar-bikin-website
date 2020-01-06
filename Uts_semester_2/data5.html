@@ -1,0 +1,112 @@
+<html>
+
+<head>
+    <title> data 5 </title>
+</head>
+<style type="text/css">
+    body {
+        background: black;
+        color: white;
+    }
+</style>
+
+<body>
+    <script language="javascript">
+        function input(form) {
+            var strnim = parseFloat(document.fform.nim.value);
+            if(isNaN(strnim)){
+                {alert('Isi Form Kelas Terlebih Dahulu');}
+            }
+            document.fform.nim1.value = strnim;
+
+            var strnama = document.fform.nama.value;
+            document.fform.nama1.value = strnama;
+
+            var ket = "IF-1";
+            if (form.pilih[1].checked == true) {
+                ket = "IF-10";
+            }
+            else
+                if (form.pilih[2].checked == true) {
+                    ket = "IF-14b";
+                }
+                else
+                    if (form.pilih[3].checked == true) {
+                        ket = "IF-4";
+                    }
+                    else
+                        if (form.pilih[4].checked == true) {
+                            ket = "IF-14";
+                        }
+                        else
+                            if (form.pilih[5].checked == true) {
+                                ket = "IF-15b";
+                            }
+                            else
+                                if (form.pilih[6].checked == true) {
+                                    ket = "IF-7";
+                                }
+                                else
+                                    if (form.pilih[7].checked == true) {
+                                        ket = "IF-15";
+                                    }
+
+            document.fform.kelas1.value = ket;
+
+        }
+    </script>
+    <h2> Masukan data anda </h2>
+    <form name="fform">
+        <table>
+            <tr>
+                <td> Nim </td>
+                <td> <input type="text" name="nim" size="10"> </td>
+            </tr>
+            <tr>
+                <td> Nama </td>
+                <td> <input type="text" name="nama" size="20"> </td>
+            </tr>
+            <tr>
+                <td> Kelas </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td> <input type="radio" name="pilih"> If-1 </td>
+                            <td> <input type="radio" name="pilih"> If-10 </td>
+                            <td> <input type="radio" name="pilih"> If-14b </td>
+                        </tr>
+                        <tr>
+                            <td> <input type="radio" name="pilih"> If-4 </td>
+                            <td> <input type="radio" name="pilih"> If-14 </td>
+                            <td> <input type="radio" name="pilih"> If-15b </td>
+                        </tr>
+                        <tr>
+                            <td> <input type="radio" name="pilih"> If-7 </td>
+                            <td> <input type="radio" name="pilih"> If-15 </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <p> Pilih kelas anda secara default </p>
+        <p> <input type="button" value="input" onclick="input(this.form)"> <input type="reset" value="reset"> </p>
+        <hr color="white">
+        <p> Data anda adalah sebagai berikut </p>
+        <table>
+            <tr>
+                <td> Nim Anda </td>
+                <td> <input type="text" size="10" name="nim1"> </td>
+            </tr>
+            <tr>
+                <td> Nama Anda </td>
+                <td> <input type="text" size="20" name="nama1"> </td>
+            </tr>
+            <tr>
+                <td> kelas Anda </td>
+                <td> <input type="text" size="7" name="kelas1"> </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

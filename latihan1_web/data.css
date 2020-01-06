@@ -1,0 +1,141 @@
+pre{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-left: 10px;
+    color:gray;
+}
+
+fieldset {
+    height: 570px;
+    width: 450px;
+    background: linear-gradient(skyblue, deepskyblue);
+    border-radius: 15px;
+}
+
+legend {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: black;
+    background: linear-gradient(skyblue, deepskyblue);
+    padding: 4px 8px;
+    box-shadow: 3px 3px 2px 1px gray;
+    border-radius: 5px;
+}
+
+legend:hover {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 19px;
+    color: blue;
+    background: linear-gradient(skyblue, deepskyblue);
+    padding: 4px 8px;
+    box-shadow: 1px 1px 1px 1px grey;
+}
+
+.tableform {
+    display: block;
+    margin-top: 18px;
+}
+
+.table1 {
+    margin: auto;
+    width: 985px;
+}
+
+tr, td {
+    padding: 4px;
+    height: 50px;
+    font-size: 17px;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    padding: 2px;
+}
+
+input, select {
+    border: 1px double gray;
+    color: black;
+    background: transparent;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+textarea {
+    border: 1px double gray;
+    background: transparent;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.submit{
+    background: linear-gradient(deepskyblue,dodgerblue,deepskyblue);
+}
+
+.submit1{
+    background: linear-gradient(deepskyblue,dodgerblue,deepskyblue);
+    height: 22px;
+    width: 65px;
+    font-size: 12px;
+}
+
+input:hover {
+    background: lightsteelblue;
+    color: black;
+    border-color: #ccc;
+}
+
+textarea:hover {
+    background: lightsteelblue;
+    color: black;
+    border-color: #ccc;
+}
+
+input:focus {
+    background: lightgrey;
+    color: black;
+    border-color: #ccc;
+}
+
+textarea:focus {
+    background: lightgrey;
+    color: black;
+    border-color: #ccc;
+}
+
+.tampil {
+    border: 0px double gray;
+    color: black;
+    background: transparent;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.tampil:hover {
+    background: transparent;
+    color: black;
+    border-color: transparent;
+}
+
+.tampil:focus {
+    background: transparent;
+    color: black;
+    border-color: transparent;
+}
+
+.td2, tr {
+    border: 1px dotted gray;
+}
+
+.table2 {
+    border-collapse: collapse;
+    border: 0px dotted gray;
+}
+
+option{
+    background: lightgray;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 30px;
+}

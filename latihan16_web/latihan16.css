@@ -1,0 +1,49 @@
+body {
+    font-family: "arial";
+    font-size: 12px;
+    color: blue;
+    background: gray;
+}
+
+#full {
+    width: 1000px;
+    height: auto;
+    overflow: auto;
+    background: #fff;
+    margin: 30px auto;
+    padding: 0px;
+    border-radius: 10px 10px;
+}
+
+#satu {
+    text-align: center;
+    background: #f66;
+    width: 960px;
+    height: 80px;
+    margin: 0px 0px 0px 0px;
+    padding: 20px;   
+    position: relative;
+}
+
+#dua{
+    text-align: center;
+    background:#f66;
+    width: 150px;
+    height: 400px;
+    position: absolute;
+    margin: 5px 0px 0px 0px;
+}
+
+#dua h2{
+    margin: 35px 0px;
+}
+
+#tiga{
+    background: #f66;
+    width: 805px;
+    height: 360px;
+    margin: 5px 0px 0px 155px;
+    padding: 20px;
+    
+}
+

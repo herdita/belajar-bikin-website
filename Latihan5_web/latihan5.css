@@ -1,0 +1,51 @@
+body {
+    font-family: "arial";
+    font-size: 12px;
+    color: blue;
+    background: gray;
+}
+
+#content {
+    width: 1000px;
+    height: auto;
+    overflow: auto;
+    background: #fff;
+    margin: 30px auto;
+    padding: 0px;
+}
+
+#header {
+    text-align: center;
+    background: #f66;
+    width: 960px;
+    height: 180px;
+    margin: 0px 0px;
+    padding: 20px;   
+}
+
+#sidebar{
+    text-align: center;
+    background:#f66;
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    margin: 5px 0px 0px 0px;
+}
+
+#post{
+    text-align: center;
+    background: #f66;
+    width: 755px;
+    height: 260px;
+    margin: 5px 0px 0px 205px;
+    padding: 20px;
+}
+
+#footer{
+    text-align: center;
+    background: #f66;
+    width: 960px;
+    height: 100px;
+    margin: 5px 0px 0px 0px;
+    padding: 20px;
+}

@@ -1,0 +1,46 @@
+<html>
+
+<head>
+	<title> Objek image </title>
+</head>
+
+<body>
+	<script language="JavaScript">
+		var num = 1;
+		img1 = new image()
+		img1.src = "pic1.jpg"
+
+		img2 = new image()
+		img2.src = "pic2.jpg"
+
+		img3 = new image()
+		img3.src = "pic3.jpg"
+
+		img4 = new image()
+		img4.src = "pic4.jpg"
+
+		img5 = new image()
+		img5.src = "pic(5).jpg"
+
+
+		function slideshow(n) {
+
+			num = num + n
+			if (num == 6) {
+				num = 1
+			}
+			if (num == 0) {
+				num = 5
+			}
+			document.my.src = eval("img" + num + ".src")
+		}
+	</script>
+
+	<center>
+		<img src="pic1.jpg" name="my" border=2 height="300" width="250"> <br>
+		<a href="JavaScript:slideshow(-1)"> Previous </a> -- <a href="JavaScript:slideshow(1)"> next </a>
+	</center>
+
+</body>
+
+</html>

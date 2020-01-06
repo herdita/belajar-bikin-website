@@ -1,0 +1,118 @@
+<html>
+
+<head>
+    <title> Latihan 11 </title>
+</head>
+
+<body>
+    <script language="javascript">
+        function hitung() {
+            var quis = parseFloat(document.fform.quis1.value);
+            var tugas = parseFloat(document.fform.tugas1.value);
+            var uts = parseFloat(document.fform.uts1.value);
+            var uas = parseFloat(document.fform.uas1.value);
+            var total = 0;
+            var indeks = "";
+            var ket = "";
+
+            quis = quis * 0.10;
+            tugas = tugas * 0.20;
+            uts = uts * 0.30;
+            uas = uas * 0.40;
+
+            total = quis + tugas + uts + uas;
+
+            if (total >= 80) {
+                indeks = "A"; ket = "Sangat Baik";
+            }
+            else
+                if ((total >= 70) && (total < 80)) {
+                    indeks = "B"; ket = "Baik";
+                }
+                else
+                    if ((total >= 60) && (total < 70)) {
+                        indeks = "C"; ket = "cukup";
+                    }
+                    else
+                        if ((total >= 50) && (total < 60)) {
+                            indeks = "D"; ket="rendah";
+                        }
+                        else
+                            if (total < 50) {
+                                indeks = "E"; ket = "Tidak lulus";
+                            }
+            document.fform.indeks1.value = indeks;
+            document.fform.ket1.value = ket;
+        }
+    </script>
+    <center>
+        <form name="fform">
+            <table border="1">
+                <tr>
+                    <td colspan="4" align="center"> Menghitung indeks prestasi </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td> Quis </td>
+                            </tr>
+                            <tr>
+                                <td> (10%) </td>
+                                <td> : </td>
+                                <td> <input type="text" name="quis1"> </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td> Tugas </td>
+                            </tr>
+                            <tr>
+                                <td> (20%) </td>
+                                <td> : </td>
+                                <td> <input type="text" name="tugas1"> </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td> Uts </td>
+                            </tr>
+                            <tr>
+                                <td> (30%) </td>
+                                <td> : </td>
+                                <td> <input type="text" name="uts1"> </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td> Uas </td>
+                            </tr>
+                            <tr>
+                                <td> (40%) </td>
+                                <td> : </td>
+                                <td> <input type="text" name="uas1"> </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <center> <input type="button" value="Hitung" onclick="hitung()"> <input type="reset" value="Ulang"> </center>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" align="center"> indeks prestasi : <input type="text" name="indeks1"> keterangan : <input type="text" name="ket1"> </td>
+                </tr>
+            </table>
+        </form>
+    </center>
+
+</body>
+
+</html>

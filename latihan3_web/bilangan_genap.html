@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title> latihan </title>
+    <link rel="stylesheet" type="text/css" href="data.css">
+</head>
+
+<body>
+    <script language="Javascript">
+        function jenis() {
+            var bil = parseFloat(document.fform.bilangan.value);
+            var jenis = "";
+            var i = bil;
+
+            if (isNaN(bil)) {
+                { alert("masukan Bilagnan Terlebih dulu"); }
+            }
+
+
+            if (i % 2 == 1 )
+            { jenis = "adalah bilangan Ganjil" }
+            else
+            { jenis = "adalah bilangan Genap" }
+
+
+            alert(bil + " " + jenis);
+        }
+    </script>
+
+    <p> masukan bilangan </p>
+    <form name="fform">
+        <p> <input type="text" size="15" name="bilangan"> </p>
+        <p> <input type="button" name="submit" value="Jenis_bilangan" onclick="jenis()"> <input type="reset" value="ulang"> </p>
+    </form>
+</body>
+
+</html>

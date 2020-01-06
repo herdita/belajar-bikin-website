@@ -1,0 +1,118 @@
+<html>
+
+<head>
+    <title> latihan 10 </title>
+</head>
+
+<body>
+    <script language="javascript">
+        function hitung() {
+            var nama = (document.awal.nama1.value);
+            var tujuan = (document.awal.tujuan1.value);
+            var jumlah = parseFloat(document.awal.jumlah1.value);
+
+            var ht = 0;
+            var sub = 0;
+            var diskon = 0;
+            var tb = 0;
+
+            if (tujuan == "jakarta") {
+                ht = 100000;
+            }
+            else
+                if (tujuan == "cirebon") {
+                    ht = 150000;
+                }
+                else {
+                    ht = 200000;
+                }
+            sub = jumlah * ht;
+            if (document.awal.member.checked == true) {
+                diskon = 0.10 * sub;
+            }
+            else {
+                diskon = 0.0;
+            }
+            tb = sub - diskon;
+
+            document.awal.ht1.value = eval(ht);
+            document.awal.sub1.value = eval(sub);
+            document.awal.diskon1.value = eval(diskon);
+            document.awal.tb1.value = eval(tb);
+        }
+    </script>
+
+    <center>
+        <form name="awal">
+            <table border="2">
+                <tr>
+                    <td colspan="2" align="center"> Travel Bintang Abadi </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table>
+
+                            <tr>
+                                <td> Nama </td>
+                                <td> : </td>
+                                <td> <input type="text" name="nama1"> </td>
+                            </tr>
+                            <tr>
+                                <td> Tujuan </td>
+                                <td> : </td>
+                                <td> <select name="tujuan1"> 
+                                <option> jakarta </option>
+                                <option> cirebon </option>
+                                <option> tasikmalaya </option>
+                            </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> Jumlah tiket </td>
+                                <td> : </td>
+                                <td> <input type="text" name="jumlah1" size="5"> </td>
+                            </tr>
+                            <tr>
+                                <td> Member </td>
+                                <td> : </td>
+                                <td> <input type="checkbox" name="member"> ya </td>
+                            </tr>
+
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td> Harga tiket </td>
+                                <td> : </td>
+                                <td> <input type="text" name="ht1"> </td>
+                            </tr>
+                            <tr>
+                                <td> sub tiket </td>
+                                <td> : </td>
+                                <td> <input type="text" name="sub1"> </td>
+                            </tr>
+                            <tr>
+                                <td> Diskon </td>
+                                <td> : </td>
+                                <td> <input type="text" name="diskon1"> </td>
+                            </tr>
+                            <tr>
+                                <td> Total bayar </td>
+                                <td> : </td>
+                                <td> <input type="text" name="tb1"> </td>
+                            </tr>
+
+                        </table>
+                    </td>
+                    <tr>
+                        <td colspan="2">
+                            <center> <input type="button" value="Hitung" onclick="hitung()"> <input type="reset" value="Ulang"> </center>
+                        </td>
+                    </tr>
+                </tr>
+        </form>
+    </center>
+</body>
+
+</html>

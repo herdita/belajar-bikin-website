@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <title> tugas </title>
+</head>
+
+<body>
+
+    <script language="Javascript">
+        function pw() {
+            var masuk = 0;
+            do {
+                pass = prompt("tuliskan password dengan benar", "");
+                if (pass == "unikom") {
+                    alert("password benar, klik 'OK' untuk masuk ke Blog saya.");
+                    break;
+                }
+                else {
+                    alert("password salah! Ulangi lagi.");
+                }
+                if (masuk == 2) {
+                    alert("maaf, kesempatan anda hanya 3 kali");
+                    history.go(-1);
+                }
+                masuk = masuk + 1;
+            }
+            while (masuk <= 2)
+        }
+    </script>
+    <p><input type="text" size="15" name=""></p>
+    <p><input type="button" name="" value="password" onclick="pw()"></p>
+</body>
+
+</html>

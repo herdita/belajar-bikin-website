@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <title> Latihan 9 </title>
+</head>
+
+<body>
+    <script language="javascript">
+        function konek1() {
+            if (document.fform.pilih.options[0].selected) {
+                window.location.href = "latihan1.html";
+            }
+            else
+                if (document.fform.pilih.options[1].selected) {
+                    window.location.href = "latihan2.html";
+                }
+                else
+                    if (document.fform.pilih.options[2].selected) {
+                        window.location.href = "latihan3.html";
+                    }
+            return true;
+        }
+
+        function konek2() {
+            var pilihint; var pilihstr;
+            pilihint = document.fform.pilih.selectedIndex;
+            pilihstr = document.fform.pilih.options[pilihint].text;
+            document.fform.pilihteks.value = "Go To" + pilihstr + "!";
+        }
+    </script>
+
+    <center>
+        <form name="fform">
+            <p> Latihan Objek document </p>
+            <hr>
+            <p> Membuka Web page dengan perintah Window Location href </p>
+            <p><b> Menu pilihan Dengan tombol </b></p>
+            <select name="pilih" onchange="konek2()" multiple size="3">
+                <option> Latihan objek radio </option>
+                <option> Latihan objek select </option>
+                <option> Latihan objek teks area </option>
+            </select><br><br>
+
+            <input type="button" name="pilihteks" value="" name="pilihteks"><br>
+            <input type="button" value="Goo!!" name="gobutton" onclick="konek1()">
+        </form>
+    </center>
+</body>
+
+</html>
